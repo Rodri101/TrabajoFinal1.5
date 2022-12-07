@@ -1,0 +1,242 @@
+.texto{
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Secular One', sans-serif;
+}
+.claro1{
+    color:#8FE3CF;
+}
+
+.papafooter{
+    display: grid;
+    background-color: #002B5B;
+    grid-template-rows: 25% 25% 25% 25%; 
+    grid-template-columns: 33% 34% 33%;
+    grid-template-areas:
+    "textofoot textofoot textofoot"
+    "columna1 columna2 columna3"
+    "botones botones botones"
+    "botfoot botfoot botfoot"
+    ;
+}
+
+.textoblanco{
+    color: white;
+}
+.vinculofoot{
+    color:#256D85;
+    display: flex;
+    text-decoration: none;
+}
+.vinculofoot:hover{
+    text-decoration: underline;
+}
+/* texto y vinculos */
+/* parte con los derechos reservados--- */
+.textofoot{
+    grid-area: textofoot;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+/* columna 1 */
+.col1{
+    grid-area: columna1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+/* columna 2------------- */
+.col2{
+    grid-area: columna2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    grid-template-rows: 50% 50%; 
+    grid-template-columns: auto;
+    grid-template-areas:
+    "vinculo"
+    "descred"
+}
+.descred{
+    display: flex;
+    grid-area: descred;
+}
+.vinculos2{
+    display: flex;
+    grid-area: vinculo;
+}
+/* columna 3 */
+.col3{
+    grid-area: columna3;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+/* texto y vinculos -----------------*/
+/* ------------botones ----------------*/
+.midfoot{
+    display: flex;
+    grid-area: botones;
+    height: 5rem;
+    border: 3rem;
+}
+.buttons {
+    min-width: 700px;
+    display: flex;
+    justify-content: center;
+}
+.buttons a {
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #314652;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+    margin: 1rem;
+}
+.buttons a:hover {
+    transform: scale(1.2);
+}
+.fcb:hover {
+    color: rgb(0, 162, 255);
+}
+.wsp:hover {
+    color: rgb(47, 255, 92);
+}
+/* --------------------------------- */
+/* texto final de footer */
+.botfoot{
+    grid-area: botfoot;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #002B5B;
+    margin-top: 2rem;
+    height: 3rem;
+}
+
+/* DISEÑO PARA 980px-------------------- */
+@media (max-width: 980px) {
+    .papafooter{
+        display: grid;
+        background-color: #002B5B;
+        /* grid-template-rows: 20% 20% 20% 20% 20%; 
+        grid-template-columns: 50% 50%; */
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+        "textofoot textofoot "
+        "columna1 columna2 "
+        "columna3 columna3"
+        "botones botones "
+        "botfoot botfoot "
+        ;
+        
+    }
+
+    .textofoot{
+        grid-area: textofoot;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .col1{
+        grid-area: columna1;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    /* columna 3 */
+    .col3{
+        grid-area: columna2;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    /* columna 2------------- */
+    .col2{
+        grid-area: columna3;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        grid-template-rows: 50% 50%; 
+        grid-template-columns: auto;
+        grid-template-areas:
+        "vinculo"
+        "descred"
+    }
+    .descred{
+        display: flex;
+        grid-area: descred;
+    }
+    .vinculos2{
+        display: flex;
+        grid-area: vinculo;
+    }
+    
+    /* texto y vinculos -----------------*/
+    /* ------------botones ----------------*/
+    .midfoot{
+        display: flex;
+        grid-area: botones;
+        height: 5rem;
+        border: 3rem;
+    }
+    .buttons {
+        min-width: 700px;
+        display: flex;
+        justify-content: space-around;
+        min-width: 100%;
+    }
+    .buttons a {
+        text-decoration: none;
+        font-size: 28px;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        background: #314652;
+        color: #f1f1f1;
+        border-radius: 50%;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+        transition: all .4s ease-in-out;
+    }
+    .buttons a:hover {
+        transform: scale(1.2);
+    }
+    .fcb:hover {
+        color: rgb(0, 162, 255);
+    }
+    .wsp:hover {
+        color: rgb(47, 255, 92);
+    }
+    /* texto final de footer */
+    .botfoot{
+        grid-area: botfoot;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #002B5B;
+        margin-top: 2rem;
+        height: 3rem;
+    }
+    .vinculofoot{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+

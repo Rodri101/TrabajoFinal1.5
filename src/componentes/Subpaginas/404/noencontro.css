@@ -1,0 +1,51 @@
+
+.background{
+    background-color: #002B5B;
+    background-image: url("./perdido.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto{
+    display: flex;
+    color: white;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    grid-area: texto;
+    padding-bottom: 3rem;
+}
+.error404{
+    font-size: 4.5rem;
+    grid-area: error404;
+    display: flex;
+}
+.john{
+    grid-area: gif;
+    display: flex;
+    max-width:100%;
+    max-height:100%;
+}
+.padre{
+    display: grid;
+    grid-template-rows: auto; 
+    grid-template-columns: 50% 50%;
+    align-items: stretch;
+    grid-template-areas:
+    "error404 gif"
+    "texto gif"
+    ;
+    padding-bottom: ;
+} 
+@media (max-width: 650px) {
+    .padre{
+        display: grid;
+        grid-template-rows: auto; 
+        grid-template-columns: 50% 50%;
+        align-items: stretch;
+        grid-template-areas:
+        "error404 error404"
+        "texto gif"
+        ;
+    } 
+}

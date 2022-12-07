@@ -1,0 +1,63 @@
+.formutextotop{
+    background-color: #2B4865;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 2%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 2%;
+}
+.h1formu{
+    color: #8FE3CF;
+}
+.papaformu{
+    background-color: #2B4865;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.espproblema{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.textoproblema{
+    padding: .35rem;
+}
+.detalles{
+    height: 7rem;
+}
+.formustandar{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: .35rem;
+}
+.barrainput{
+    border-radius: 1rem;
+    border-color: none;
+}
+.errorformulario{
+    color: red;
+}
+.widthpadd{
+    width: 70%;
+    padding: .35rem;
+}
+.botonenviarformulario{
+    background-color: #256D85;
+    border-color: #256D85;
+    border-radius: 4px;
+    width: 6rem;
+    height: 1.5rem;
+    margin: 1rem;
+}
+.selectproblema{
+    width: 70%;
+}
+.paddingtoright{
+    padding-right: 1rem;
+}

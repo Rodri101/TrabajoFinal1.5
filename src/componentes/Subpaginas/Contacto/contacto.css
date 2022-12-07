@@ -1,0 +1,108 @@
+/* color para texto con error para formulario */
+.err{
+    color: red;
+}
+/* todo el texto y la imagen de la oficina */
+.textoinfo{
+    min-height: 100%;
+    color: white;
+    font-size: x-large;
+    display:grid;
+    background-color: #2B4865;
+    grid-template-rows: 75% 25%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "textocontacto imagofi"
+    "textofinal textofinal"
+    ;
+}
+.flexcaja{
+    padding: 3rem;
+}
+.textocontacto{
+    grid-area: textocontacto;
+}
+/* imagen de la oficina */
+.imgofi{
+    display: flex;
+    grid-area: imagofi;
+    object-fit: cover;
+    width: 100%;
+    height: 75%;
+}
+/* ultimo parrafo de texto (referencia:"Si no fuese posible la presencia en las direcciones...") */
+.textofinal{
+    display: grid;
+    grid-area: textofinal;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: .5rem;
+    word-break:break-all;
+}
+
+.listahorario{
+    padding-left:3rem ;
+    padding-top: 1rem;
+}
+.nopad{
+    padding: 0;
+}
+
+/* formulario y titulo de formulario */
+.ingresoinfo{
+    display:grid;
+    background-color: #2B4865;
+    color:white;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 75%;
+    grid-template-areas:
+    "formutit"
+    "formulario"
+    ;
+}
+/* titulo del formulario */
+.formutit{
+    display: flex;
+    justify-content: center;
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Secular One', sans-serif;
+    font-size: 2.5rem;
+    color:#8FE3CF ;
+    grid-area: formutit;
+}
+/* formulario */
+.formulario{
+    margin-bottom:3rem ;
+    display: flex;
+    grid-area: formulario;
+    justify-content: center;
+}
+.lineaylabel{
+    margin-bottom: 2rem;
+}
+.lideformu{
+    width: 50rem;
+    height: 2rem;
+}
+/* listas con emojis */
+.lineadir{
+    list-style: none;
+}
+.lineadir::before{
+    content: "📍 ";
+}
+.lineahora{
+    list-style: none;
+}
+.lineahora::before{
+    content: "🕐 ";
+}
+.lineacall{
+    list-style: none;
+}
+.lineacall::before{
+    content: "📞 ";
+}
+/* ------------------- */
+
