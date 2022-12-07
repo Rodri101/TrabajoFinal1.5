@@ -117,7 +117,6 @@ const Slide = styled.div`
 	overflow: hidden;
 	transition: .3s ease all;
 	z-index: 10;
-	/* max-height: 500px; */
 	position: relative;
 	img {
 		width: 100%;
@@ -128,7 +127,7 @@ const Slide = styled.div`
 const TextoSlide = styled.div`
 	background: ${props => props.colorFondo ? props.colorFondo : 'rgba(0,0,0,.3)'};
 	color: ${props => props.colorTexto ? props.colorTexto : '#fff'};
-	width: 100%;
+	width: 90%;
 	padding: 10px 60px;
 	text-align: center;
 	position: absolute;
