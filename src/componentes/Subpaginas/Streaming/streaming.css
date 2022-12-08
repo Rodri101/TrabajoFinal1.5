@@ -1,6 +1,8 @@
 .papastreamer{
     background-color: #2B4865;
     padding-left: 3rem;
+    display: flex;
+    flex-direction: column;
 }
 .srrojo{
     color: red;
@@ -8,8 +10,7 @@
 .srtitulopeliculas{
     color: #8FE3CF;
     padding-top: 3rem;
-    padding-left: 2rem;
-    padding-bottom: .5rem;
+    padding-bottom: 2rem;
 }
 .srinput{
     margin-left: 2.4rem;

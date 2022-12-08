@@ -7,18 +7,22 @@
     flex-direction: column;
 }
 
-.texto{
+.texto404{
     display: flex;
     color: white;
-    padding-top: 3rem;
-    padding-left: 3rem;
     grid-area: texto;
     padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    width: 95%;
 }
 .error404{
     font-size: 4.5rem;
     grid-area: error404;
     display: flex;
+}
+.error404380px{
+    display: none;
 }
 .john{
     grid-area: gif;
@@ -35,10 +39,10 @@
     "error404 gif"
     "texto gif"
     ;
-    padding-bottom: ;
 } 
 @media (max-width: 650px) {
     .padre{
+        width: 100%;
         display: grid;
         grid-template-rows: auto; 
         grid-template-columns: 50% 50%;
@@ -47,5 +51,41 @@
         "error404 error404"
         "texto gif"
         ;
+        
     } 
+    .error404{
+        width: 100%;
+        padding-left: 0%;
+        padding-top: 0%;
+        font-size: 3rem;
+    }
+    .texto404{
+        padding-bottom: 2rem;
+        padding-left: 2rem;
+        padding-top: 1rem;
+        width: 90%;
+    }
+    .john{
+        height: 100%;
+    }
+}
+
+@media (max-width: 380px) {
+    .padre{
+        width: 100%;
+    }
+    .texto404{
+        width: 85%;
+    }
+    .error404380px{
+        grid-area: error404;
+        font-size: 2rem;
+        display: flex;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-top: 1.5rem;
+    }
+    .error404{
+        display: none;
+    }
 }

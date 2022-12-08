@@ -106,8 +106,11 @@
     filter: brightness(140%);
 }
 
-/* dispositivos moviles------------------------- */
+/* dispositivos de tamaño menor------------------------- */
 @media (max-width: 980px) {
+    .titulo{
+        font-size: 1.7rem;
+    }
     .iniciomob{
         color: #aeff00;
     }
@@ -130,7 +133,7 @@
     }
     .logoupper{
         height: 3.8rem;
-        width: auto;
+        width: 3.8rem;
     }
     .barrasuperior{
         padding-left: 2.5rem;
@@ -152,12 +155,23 @@
     .logopagina{
         align-items: center;
         display: flex;
-        margin-left: 30%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .titulo{
-        display: none;
+        font-size: 1.5rem;
     }
     .botoninises{
+        display: flex;
         display: none;
+    }
+    .logoupper{
+        width: 3.5rem;
+        display: none;
+    }
+}
+@media (max-width: 380px) {
+    .logoupper{
+        width: 3.5rem;
     }
 }
