@@ -29,6 +29,7 @@ const Streaming = () => {
 		getMovieRequest(searchValue);
 	}, [searchValue]);
 
+/* la lista guardada */
     useEffect(() => {
 		const movieFavourites = JSON.parse(
 			localStorage.getItem('react-movie-app-favourites')

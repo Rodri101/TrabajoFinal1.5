@@ -84,6 +84,7 @@
         padding-left: 1.5rem;
         padding-right: 1.5rem;
         padding-top: 1.5rem;
+        font-weight: bold;
     }
     .error404{
         display: none;

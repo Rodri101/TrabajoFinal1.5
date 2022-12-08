@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import imgoficina from "./img/oficina.jpg"
 import "./contacto.css";
 
-const Formu = () => {
+  const Formu = () => {
   const { register, formState: { errors }, handleSubmit } = useForm("");
   const onSubmit = (data) => {
     console.log(data);
@@ -51,8 +51,7 @@ const Formu = () => {
             <div className="listahorario nopad">
             <li className="lineacall">(111)111 111 111</li>
             </div>
-            O puede optar por dejar un mensaje registrando su información y alguna opinion que nos
-            quiera compartir<br />
+            O puede optar por consultar mediante Soporte.<br />
             Muchas Gracias
           </div>
 
@@ -62,25 +61,16 @@ const Formu = () => {
 {/* Formulario */}
   <div className="ingresoinfo">
     <div className="formutit">Comparte tu opinion con nosotros</div>
-  <div className="formulario">
-  <form onSubmit={handleSubmit(onSubmit)}>
+  <div >
+  <form className="formulario" onSubmit={handleSubmit(onSubmit)}>
 
     <div className="lineaylabel">
-      <label> Nombre </label>
+      <label> Nombre y Apellido </label>
       <input className="lideformu" type="text" {...register('nombre', {
         required: true,
-        maxLength: 5
       })}/>
 
       {errors.nombre?.type === 'required' && <p className="err"> El campo nombre es obligatorio </p>}
-      {errors.nombre?.type === 'maxlength' && <p className="err"> El campo debe de tener menos de 15 caracteres </p>}
-    </div>
-
-    <div className="lineaylabel">
-      <label> Apellido </label>
-      <input className="lideformu" type="text" {...register('apellido', {
-        maxlength: 5
-      })} />
     </div>
 
     <div className="lineaylabel">
@@ -97,12 +87,14 @@ const Formu = () => {
       <label> Pais </label>
       <select {...register('pais')}>
         <option value="arg"> Argentina </option>
-        <option value="uru"> Uruguay </option>
-        <option value="per"> Peru </option>
-        <option value="bra"> Brasil </option>
         <option value="col"> Colombia </option>
         <option value="chi"> Chile </option>
       </select>
+    </div>
+
+    <div className="espproblema">
+      <label className="textoproblema">Cuentanos:</label>
+      <input className="detalles" type="text"/>
     </div>
 
     <input type="submit" value="Enviar" />

@@ -1,6 +1,5 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import { createGlobalStyle } from "styled-components";
 import "./soporte.css"
 
 const Soporte = () => {
