@@ -16,7 +16,7 @@ function Home() {
             <Slideshow controles={true} autoplay={false} velocidad="400" intervalo="5000">
 				
                 <Slide>
-                    <NavLink to="/" className="item">
+                    <NavLink to="/src/componentes/Subpaginas/Streaming/Streaming" className="item">
                         <img src={img4} className="imagen" alt=" "/>
                     </NavLink>
 					<TextoSlide>
@@ -25,7 +25,7 @@ function Home() {
 				</Slide>
                 
                 <Slide>
-                    <NavLink to="/" className="item">
+                    <NavLink to="/src/componentes/Subpaginas/Streaming/Streaming" className="item">
                         <img src={img1} className="imagen" alt=" "/>
                     </NavLink>
 					<TextoSlide>
@@ -34,7 +34,7 @@ function Home() {
 				</Slide>
 
 				<Slide>
-                    <NavLink to="/" className="item">
+                    <NavLink to="/src/componentes/Subpaginas/Streaming/Streaming" className="item">
                         <img src={img2} className="imagen" alt=" "/>
                     </NavLink>
 					<TextoSlide>
@@ -43,7 +43,7 @@ function Home() {
 				</Slide>
                 
 				<Slide>
-                    <NavLink to="/" className="item">
+                    <NavLink to="/src/componentes/Subpaginas/Streaming/Streaming" className="item">
                         <img src={img3} className="imagen" alt=" "/>
                     </NavLink>
 					<TextoSlide>

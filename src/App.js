@@ -7,6 +7,7 @@ import Contacto from './componentes/Subpaginas/Contacto/Contacto';
 import Compra from './componentes/Subpaginas/Compra/Compra';
 import Home from './componentes/Subpaginas/Home/Home';
 import Soporte from './componentes/Subpaginas/Soporte/Soporte';
+import Streaming from './componentes/Subpaginas/Streaming/Streaming';
 import Noencontro from './componentes/Subpaginas/404/Noencontro';
 
 
@@ -16,6 +17,7 @@ function App() {
       <BrowserRouter>
         <Upper/>{/* Barra de navegacion */}
         <Routes>
+          <Route path="/src/componentes/Subpaginas/Streaming/Streaming" element={<Streaming/>}/>
 
           <Route path="/src/componentes/Subpaginas/Contacto/Contacto" element={<Contacto/>}/>
 

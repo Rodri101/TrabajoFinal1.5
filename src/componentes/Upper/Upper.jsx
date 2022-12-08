@@ -33,7 +33,7 @@ const Upper = () => {
                     <NavLink to="*" className="navbaropt">TIENDA</NavLink>
                 </li>
                 <li className="antili">
-                    <NavLink to="*" className="navbaropt">STREAMING</NavLink>
+                    <NavLink to="/src/componentes/Subpaginas/Streaming/Streaming" className="navbaropt">STREAMING</NavLink>
                 </li>
                 <li className="antili">
                     <NavLink to="/src/componentes/Subpaginas/Contacto/Contacto" className="navbaropt">ACERCA DE</NavLink>
