@@ -122,6 +122,13 @@ const Slide = styled.div`
 		width: 100%;
 		vertical-align: top;
 	}
+	@media screen and (max-width: 650px){
+        height:22rem;
+		img {
+			height:100%;
+			vertical-align: top;
+		}
+    }
 `;
 
 const TextoSlide = styled.div`
@@ -132,9 +139,10 @@ const TextoSlide = styled.div`
 	text-align: center;
 	position: absolute;
 	bottom: 0;
-	@media screen and (max-width: 700px) {
+	@media screen and (max-width: 650px) {
 		position: relative;
 		background: #000;
+		bottom:20%;
 	}
 `;
 

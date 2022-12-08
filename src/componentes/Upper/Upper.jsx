@@ -62,7 +62,7 @@ const Navbaropciones = styled.ul` //estilo de formato ul
     @media screen and (max-width:980px){
         background-color: #002B5B;
         position: absolute;
-        top: 6.4rem;
+        top: 3.876rem;
         left: ${({ open }) => (open ? "0" : "-100%")}; //valor dinamico
         width: 100%;
         height: 50vh;

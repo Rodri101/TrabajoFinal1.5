@@ -240,3 +240,14 @@
     }
 }
 
+@media (max-width: 650px) {
+    .textofoot{
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    .col2{
+        justify-content: center;
+    }
+}
+
+

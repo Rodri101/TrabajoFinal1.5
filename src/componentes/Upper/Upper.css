@@ -3,13 +3,15 @@
 	padding: 0;
 }
 @media (min-width: 980px) {
-.homemob{
-    display: none;
-}
-.iniciomob{
-    display: none;
-}
-
+    .homemob{
+        display: none;
+    }
+    .iniciomob{
+        display: none;
+    }
+    .logomobile{
+        height: 3.8rem;
+    }
 }
 .antili{
     list-style: none;
@@ -124,19 +126,28 @@
         justify-content: center;
     }
     .logopagina{
-        margin-left: 20%;
+        margin-left: 20%;    
+    }
+    .logoupper{
+        height: 3.8rem;
+        width: auto;
     }
     .barrasuperior{
         padding-left: 2.5rem;
+        height: 3.875rem;
     }
+    
 } 
-/* DISEÑO PARA 480px-------------------- */
+/* DISEÑO PARA 650px-------------------- */
 @media (max-width: 650px) {
     .iniciomob{
         color: #aeff00;
     }
     .barrasuperior{
         padding-left: 1.5rem;
+    }
+    .logomobile{
+        font-size: 2.5rem;
     }
     .logopagina{
         align-items: center;
